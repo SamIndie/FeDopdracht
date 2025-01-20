@@ -1,0 +1,647 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+
+}
+
+body {
+    display: grid;
+
+}
+
+main {
+    margin: 2em;
+}
+
+header {
+    background-color: red;
+    color: white;
+    padding: 1rem;
+}
+
+header ol {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header ol li {
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+    gap: 0.5rem;
+}
+
+header ol img {
+    height: 50px;
+    width: auto;
+}
+
+header ol li:last-child {
+    margin-left: auto;
+    /* Push the "Log in/Sign up" section to the right */
+}
+
+nav {
+    background-color: black;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.nav-toggle {
+    display: none;
+    /* Hidden for desktop view */
+    background-color: white;
+    border: none;
+    color: #e60012;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Navigation links */
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    /* 5 evenly spaced columns */
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-self: flex-end;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+
+
+}
+
+nav ul li a:hover {
+    padding: 0.75em;
+    border-radius: 0.3em;
+    border: 2px solid white;
+    background-color: red;
+    color: white;
+    /* Ensures text color remains white */
+}
+
+
+
+
+h1 {
+    font-size: 10em;
+    font-weight: 850;
+
+}
+
+h2 {
+    font-size: 2em;
+
+}
+
+h3 {
+    font-size: 4em;
+    font-weight: 850;
+    text-transform: capitalize;
+}
+
+
+h4 {
+    text-decoration: none;
+}
+
+
+article {
+    width: 50%;
+    display: flex;
+    /* Use flexbox to arrange items in a row */
+    flex-direction: column;
+    padding: 1em 0;
+    text-align: start;
+
+}
+
+/* Center-align text inside the elements,
+
+}
+
+ /* article h2,
+article h1,
+article p {
+    margin-bottom: ;
+} */
+
+article p {
+    font-size: 1em;
+}
+
+article a {
+    text-decoration: none;
+    /* Remove underline from the link */
+    text-align: center;
+    width: 12em;
+    color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Optional: Adds shadow */
+    border-radius: 5em;
+    padding: 1.5em;
+    border-color: black;
+    font-weight: bold;
+
+}
+
+article a:hover {
+
+    border: 3px solid white;
+    background-color: dimgrey;
+    color: white;
+    /* Ensures text color remains white */
+}
+
+.coins {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    /* Space between items */
+    list-style: none;
+
+}
+
+
+
+/* play with friends */
+
+.playwithfriends {
+    display: grid;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    /* Optional: space between image and text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Optional: Adds shadow */
+    border-radius: 1em;
+    padding: 2em;
+    margin-bottom: 3em;
+    width: 100%;
+}
+
+
+.playwithfriends img {
+    width: 100%;
+    /* Image takes up full column width */
+    display: block;
+    /* Removes inline spacing */
+}
+
+.playwithfriends .text-content {
+    text-align: left;
+    /* Aligns all text to the left */
+}
+
+.playwithfriends img {
+    width: 50%;
+    width: 30em;
+    /* Image takes up half of the container width */
+
+}
+
+.playwithfriends .text-content {
+    display: flex;
+    flex-direction: column;
+    /* Stacks the text and link vertically */
+    justify-content: space-between;
+    /* Ensures equal spacing between text blocks */
+    height: 100%;
+    /* Matches the height of the image */
+}
+
+.playwithfriends h2,
+.playwithfriends p,
+.playwithfriends a {
+
+    padding: 0.70em 0;
+
+}
+
+.playwithfriends a {
+    text-decoration: none;
+    color: white;
+    /* Link color */
+    font-weight: bold;
+    background-color: #e60012;
+    border-radius: 4em;
+    padding: 1em;
+    max-width: 8em;
+}
+
+
+/* mario on nintendo switch */
+/* 1st list: Nintendo games */
+/* 1st list: Nintendo games */
+.nintendo-games {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Makes items responsive */
+    gap: 1em; /* Space between items */
+   
+    
+}
+
+.nintendo-games li {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color:#333333;
+    border-radius: 1em; /* Rounded corners */
+    padding: 1em; /* Space inside each item */
+    overflow: hidden; /* Ensures image stays within rounded corners */
+    display: grid;
+    grid-template-rows: auto auto auto; /* Image, heading, and paragraph */
+    
+}
+
+.nintendo-games li img {
+   
+    /* Image fills the background width */
+
+    border-radius: 1em; /* Matches background's rounded corners */
+}
+
+.nintendo-games li h4,
+.nintendo-games li p {
+    color:white;
+    margin: 0.7em; 
+    text-align: left; /* Align text to the left */
+}
+
+/* Mario in the news */
+
+
+/* General styling for the section */
+.news-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    /* Responsive grid layout */
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+/* Individual article styling */
+.news-section article {
+    background-color: #333333;
+    /* White background for articles */
+    border-radius: 1em;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Clip content if it overflows */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    /* Inner padding */
+    width: 20em;
+}
+
+/* Styling for the images */
+.news-section article img {
+    width: 100%;
+    /* Make image span the full width */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-bottom: 1px solid #e5e5e5;
+    /* Divider between image and text */
+}
+
+/* Styling for the time element */
+.news-section article time {
+    font-size: 14px;
+    /* dates */
+    color: #888888;
+    /* Gray color for date */
+    margin: 1em 0;
+
+}
+
+/* Styling paragraph */
+.news-section article p {
+    font-size: 16px;
+    color: white;
+
+
+}
+
+
+    img[alt="set-sail-for-adventure-in-mario-and-luigi-brothership-video"] {
+      padding-top: 10em;
+        width: 50%; /* Example: Set the image width */
+        border-radius: 10px; /* Example: Add rounded corners */
+    }
+
+
+
+/* Nintendo store */
+/* Center the list on the page */
+.leftlist-nintendostore {
+    gap: 1em; /* Space between list items */
+}
+
+.leftlist-nintendostore li {
+    background-color: #333; /* Dark background color */
+    padding: 2em 1em 1em 1em; /* Padding: top, left-right, bottom */
+    border-radius: 10px; /* Rounded corners */
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    justify-items: center; /* Centering content */
+    text-align: center; /* Center text */
+   
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for 3D effect */
+}
+
+.leftlist-nintendostore li img {
+    
+  width: 50%;
+    border-radius: 10px; /* Rounded corners for images */
+    margin-bottom: 1em; /* Space below the image */
+    transform: translateY(-10px); /* Slightly move the image upwards for 3D effect */
+}
+
+.leftlist-nintendostore li p {
+    color: white; /* White text color */
+    margin: 1.5em; /* Space around the paragraph */
+}
+
+.leftlist-nintendostore li a {
+    color: black; /* Black text color */
+    background-color: yellow; /* Yellow background */
+    padding:1em; /* Padding around the link */
+    text-decoration: none; /* Remove underline */
+    border-radius: 3em; /* Rounded corners for link */
+    font-weight: bold;
+    transition: 0.3s ease; /* Smooth transition */
+}
+
+.leftlist-nintendostore li a:hover {
+    background-color: #ffcc00; /* Lighter yellow on hover */
+}
+
+
+.image-list {
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 2rem;
+    /* Space between items */
+    flex-wrap: wrap;
+    /* Allow wrapping if needed */
+    list-style: none;
+}
+
+
+.leftlist-nintendostore  {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    max-width: 30em;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+ul.leftlist-nintendostore  li:first-child img:first-of-type {
+    max-height: 200px;
+}
+
+ul.leftlist-nintendostore  li:first-child img:nth-of-type(2) {
+    width: 300px;
+
+}
+
+ul.leftlist-nintendostore li:first-child img:nth-of-type(3) {
+    width: 100px;
+}
+
+ol li article {
+    grid: auto-flow / 1fr 1fr 1fr;
+}
+
+/* Footer code */
+
+/* Base */
+footer {
+    background-color: red;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Customer Support Button */
+footer button {
+    background-color: #e60012;
+    /* Red button similar to Mario's theme */
+    text-transform: capitalize;
+    color: white;
+    padding: 1em 2em;
+    border: 2px solid white;
+    border-radius: 0.7em;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+footer button:hover {
+    background-color: white;
+    color: red;
+}
+
+/* Social Media Icons */
+footer h5 {
+
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+footer ol {
+
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    /* Spacing between icons */
+    margin-top: 0.5;
+}
+
+footer img[alt="linktofacebook"] {
+    height: 4em;
+    border: 0.1em solid white;
+    border-radius: 0.3em;
+}
+
+/* Target the Twitter icon */
+footer img[alt="linktotwitter"] {
+    height: 4em;
+    border: 0.1em solid white;
+    border-radius: 0.3em;
+}
+
+/* Target the YouTube icon */
+footer img[alt="linktoyoutube"] {
+    height: 4em;
+    border: 0.1em solid white;
+    border-radius: 0.3em;
+}
+
+/* Target the YouTube icon */
+footer img[alt="linktoinstagram"] {
+    height: 4em;
+    border: 0.1em solid white;
+    border-radius: 0.3em;
+}
+
+footer ol li img:hover {
+    transform: scale(1.1);
+    /* Slight zoom effect on hover */
+
+}
+
+/* Privacy and Terms Links */
+footer ol a {
+    text-decoration: none;
+    color: white;
+
+}
+
+footer ol a:hover h6 {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* Bottom Text */
+footer h6 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    font-weight: normal;
+    line-height: 0.5;
+}
+
+/* Add responsiveness smaller screens */
+@media (max-width: 600px) {
+    .news-section {
+        padding: 10px;
+        /* Reduce padding on smaller screens */
+        gap: 10px;
+        /* Reduce gap on smaller screens */
+    }
+
+    .news-section article {
+        padding: 5px;
+        /* Less padding for smaller articles */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: inline-block;
+        /* Show toggle button on smaller screens */
+    }
+
+    nav ul {
+        display: none;
+        /* Initially hide the menu */
+        grid-template-columns: 1fr;
+        /* Stack items */
+        gap: 1rem;
+        text-align: center;
+        padding: 1rem 0;
+        background-color: #e60012;
+    }
+
+    nav ul.active {
+        display: grid;
+        /* Show menu when active */
+    }
+
+
+    h3 {
+        text-transform: capitalize;
+        text-align: center;
+
+        font-size: 4em;
+        font-weight: 850;
+    }
+}
+
+/* Hover effect on the list items */
+.image-list li:hover {
+    transform: scale(1.1);
+    /* Enlarge the item when hovered */
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .image-list {
+        gap: 1rem;
+        /* Reduce gap on smaller screens */
+    }
+
+    .image-list img {
+        width: 60px;
+        /* Reduce image size on small screens */
+    }
+}
+
+/* Responsive styles for phones */
+@media (max-width: 768px) {
+    .playwithfriends {
+        grid-template-columns: 1fr;
+        /* Stack content in a single column */
+        text-align: center;
+        /* Center-aligns text for smaller screens */
+    }
+
+    .playwithfriends img {
+        max-width: 100%;
+        /* Ensure image adjusts to fit smaller screens */
+        margin: 0 auto;
+        /* Center image horizontally */
+    }
+
+    .playwithfriends .text-content {
+        padding: 10px;
+        /* Adds spacing around text for readability */
+    }
+
+    .playwithfriends .text-content h2,
+    .playwithfriends .text-content p,
+    .playwithfriends .text-content a {
+        text-align: center;
+        /* Center-align all text and link */
+    }
+}
