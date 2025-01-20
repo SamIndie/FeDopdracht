@@ -2,21 +2,21 @@
     margin: 0;
     padding: 0;
     text-align: left;
+    list-style: none;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
-
-}
-
-body {
     display: grid;
+    background-color:whitesmoke;
 
 }
 
 main {
-    margin: 2em;
+    margin: 2em;display: grid;
+    width: 100%;
+    max-width: 90%;
 }
 
 header {
@@ -37,7 +37,6 @@ header ol {
 header ol li {
     display: flex;
     align-items: center;
-    /* Center items vertically */
     gap: 0.5rem;
 }
 
@@ -47,8 +46,7 @@ header ol img {
 }
 
 header ol li:last-child {
-    margin-left: auto;
-    /* Push the "Log in/Sign up" section to the right */
+    margin-left: auto; /* Push the "Log in/Sign up" section to the right */
 }
 
 nav {
@@ -60,27 +58,13 @@ nav {
     margin-top: 1rem;
 }
 
-.nav-toggle {
-    display: none;
-    /* Hidden for desktop view */
-    background-color: white;
-    border: none;
-    color: #e60012;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-}
 
 /* Navigation links */
 nav ul {
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    /* 5 evenly spaced columns */
+    grid-template-columns: repeat(5, auto);  /* 5 evenly spaced columns */
     gap: 2rem;
     list-style: none;
-    margin: 0;
-    padding: 0;
     justify-self: flex-end;
 }
 
@@ -100,13 +84,13 @@ nav ul li a:hover {
     border-radius: 0.3em;
     border: 2px solid white;
     background-color: red;
-    color: white;
-    /* Ensures text color remains white */
+    color:white;
+   
 }
 
 
 
-
+   /* typografie */
 h1 {
     font-size: 10em;
     font-weight: 850;
@@ -129,6 +113,9 @@ h4 {
     text-decoration: none;
 }
 
+article p {
+    font-size: 1em;
+}
 
 article {
     width: 50%;
@@ -140,9 +127,8 @@ article {
 
 }
 
-/* Center-align text inside the elements,
 
-}
+
 
  /* article h2,
 article h1,
@@ -150,18 +136,16 @@ article p {
     margin-bottom: ;
 } */
 
-article p {
-    font-size: 1em;
-}
+
 
 article a {
     text-decoration: none;
-    /* Remove underline from the link */
+
     text-align: center;
     width: 12em;
     color: black;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    /* Optional: Adds shadow */
+    
     border-radius: 5em;
     padding: 1.5em;
     border-color: black;
@@ -174,15 +158,14 @@ article a:hover {
     border: 3px solid white;
     background-color: dimgrey;
     color: white;
-    /* Ensures text color remains white */
+   
 }
 
 .coins {
     display: flex;
     justify-content: flex-start;
     gap: 2rem;
-    /* Space between items */
-    list-style: none;
+    list-style: none;    /* Space between items */
 
 }
 
@@ -195,9 +178,9 @@ article a:hover {
     display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    /* Optional: space between image and text */
+  
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    /* Optional: Adds shadow */
+   
     border-radius: 1em;
     padding: 2em;
     margin-bottom: 3em;
@@ -259,35 +242,43 @@ article a:hover {
 /* 1st list: Nintendo games */
 .nintendo-games {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Makes items responsive */
-    gap: 1em; /* Space between items */
-   
-    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Makes items responsive */
+    gap: 1em;
+    /* Space between items */
+
+
 }
 
 .nintendo-games li {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    background-color:#333333;
-    border-radius: 1em; /* Rounded corners */
-    padding: 1em; /* Space inside each item */
-    overflow: hidden; /* Ensures image stays within rounded corners */
+    background-color: #333333;
+    border-radius: 1em;
+    /* Rounded corners */
+    padding: 1em;
+    /* Space inside each item */
+    overflow: hidden;
+    /* Ensures image stays within rounded corners */
     display: grid;
-    grid-template-rows: auto auto auto; /* Image, heading, and paragraph */
-    
+    grid-template-rows: auto auto auto;
+    /* Image, heading, and paragraph */
+
 }
 
 .nintendo-games li img {
-   
+
     /* Image fills the background width */
 
-    border-radius: 1em; /* Matches background's rounded corners */
+    border-radius: 1em;
+    /* Matches background's rounded corners */
 }
 
 .nintendo-games li h4,
 .nintendo-games li p {
-    color:white;
-    margin: 0.7em; 
-    text-align: left; /* Align text to the left */
+    color: white;
+    margin: 0.7em;
+    text-align: left;
+    /* Align text to the left */
 }
 
 /* Mario in the news */
@@ -350,57 +341,83 @@ article a:hover {
 }
 
 
-    img[alt="set-sail-for-adventure-in-mario-and-luigi-brothership-video"] {
-      padding-top: 10em;
-        width: 50%; /* Example: Set the image width */
-        border-radius: 10px; /* Example: Add rounded corners */
-    }
+img[alt="set-sail-for-adventure-in-mario-and-luigi-brothership-video"] {
+    padding-top: 10em;
+    width: 50%;
+    /* Example: Set the image width */
+    border-radius: 10px;
+    /* Example: Add rounded corners */
+}
 
 
 
 /* Nintendo store */
 /* Center the list on the page */
 .leftlist-nintendostore {
-    gap: 1em; /* Space between list items */
+    padding-top: 3em;
+    gap: 5em;
 }
 
+
 .leftlist-nintendostore li {
-    background-color: #333; /* Dark background color */
-    padding: 2em 1em 1em 1em; /* Padding: top, left-right, bottom */
-    border-radius: 10px; /* Rounded corners */
+    background-color: #333;
+    padding: 2em 1em 1em 1.5em;
+    border-radius: 1em;
     display: grid;
-    grid-template-columns: 1fr; /* Single column */
-    justify-items: center; /* Centering content */
-    text-align: center; /* Center text */
-   
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for 3D effect */
+    grid-template-columns: 1fr;
+    /* Single column */
+    text-align: center;
+    position: relative;
+
 }
 
 .leftlist-nintendostore li img {
-    
-  width: 50%;
-    border-radius: 10px; /* Rounded corners for images */
-    margin-bottom: 1em; /* Space below the image */
-    transform: translateY(-10px); /* Slightly move the image upwards for 3D effect */
+    position: absolute;
+    top: -80px;
+    /* Slightly above the background */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Adjust position to the center */
+    width: 30%;
+    /* Fixed width for the image */
+
+
 }
 
 .leftlist-nintendostore li p {
-    color: white; /* White text color */
-    margin: 1.5em; /* Space around the paragraph */
+    color: white;
+    /* White text color */
+    margin: 3em 0 1em;
+    /* Space between the image and paragraph */
+    font-size: 1em;
+    /* Standard readable size */
 }
 
 .leftlist-nintendostore li a {
-    color: black; /* Black text color */
-    background-color: yellow; /* Yellow background */
-    padding:1em; /* Padding around the link */
-    text-decoration: none; /* Remove underline */
-    border-radius: 3em; /* Rounded corners for link */
+    display: inline-block;
+    /* Allows padding and alignment */
+    text-align: center;
+    /* Center-align text */
+    color: black;
+    /* Black text color */
+    background-color: yellow;
+    /* Yellow background */
+    padding: 0.5em 1em;
+    /* Padding inside the link */
+    border-radius: 5px;
+    /* Rounded corners for the link */
+    text-decoration: none;
+    /* Remove underline */
     font-weight: bold;
-    transition: 0.3s ease; /* Smooth transition */
+    /* Bold font for emphasis */
+    transition: background-color 0.3s ease;
+    /* Smooth hover effect */
 }
 
 .leftlist-nintendostore li a:hover {
-    background-color: #ffcc00; /* Lighter yellow on hover */
+    background-color: #ffd700;
+    /* Lighter yellow on hover */
 }
 
 
@@ -416,35 +433,138 @@ article a:hover {
 }
 
 
-.leftlist-nintendostore  {
+.leftlist-nintendostore {
     display: flex;
     justify-content: flex-start;
     justify-content: center;
     flex-direction: column;
     list-style: none;
     max-width: 30em;
-    margin: 0;
-    padding: 0;
+    padding-top: 15em;
 
 
 }
 
-ul.leftlist-nintendostore  li:first-child img:first-of-type {
+ul.leftlist-nintendostore>li:first-child img:first-of-type {
     max-height: 200px;
 }
 
-ul.leftlist-nintendostore  li:first-child img:nth-of-type(2) {
+ul.leftlist-nintendostore>li:first-child img:nth-of-type(2) {
     width: 300px;
-
 }
 
-ul.leftlist-nintendostore li:first-child img:nth-of-type(3) {
+ul.leftlist-nintendostore>li:first-child img:nth-of-type(3) {
     width: 100px;
 }
 
 ol li article {
-    grid: auto-flow / 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
+
+/* right list */
+
+.rightlist-nintendostore {
+    padding-top: 3em;
+    gap: 5em;
+}
+
+.rightlist-nintendostore li {
+    background-color: #333;
+    padding: 2em 1em 1em 1.5em;
+    border-radius: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column */
+    text-align: center;
+    position: relative;
+}
+
+.rightlist-nintendostore li img {
+    position: absolute;
+    top: -80px;
+    /* Slightly above the background */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Adjust position to the center */
+    width: 30%;
+    /* Fixed width for the image */
+}
+
+.rightlist-nintendostore li p {
+    color: white;
+    /* White text color */
+    margin: 3em 0 1em;
+    /* Space between the image and paragraph */
+    font-size: 1em;
+    /* Standard readable size */
+}
+
+.rightlist-nintendostore li a {
+    display: inline-block;
+    
+    text-align: center;
+
+    color: black;
+    /* Black text color */
+    background-color: yellow;
+    
+    padding: 0.5em 1em;
+    /* Padding inside the link */
+    border-radius: 5px;
+    /* Rounded corners for the link */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Bold font for emphasis */
+    transition: background-color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.rightlist-nintendostore li a:hover {
+    background-color: #ffd700;
+    /* Lighter yellow on hover */
+}
+
+.image-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    /* Space between items */
+    flex-wrap: wrap;
+    /* Allow wrapping if needed */
+    list-style: none;
+}
+
+.rightlist-nintendostore {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    max-width: 30em;
+    padding-top: 15em;
+}
+
+ul.rightlist-nintendostore>li:first-child img:first-of-type {
+    max-height: 200px;
+}
+
+ul.rightlist-nintendostore>li:first-child img:nth-of-type(2) {
+    width: 300px;
+}
+
+ul.rightlist-nintendostore>li:first-child img:nth-of-type(3) {
+    width: 100px;
+}
+
+ol li article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 
 /* Footer code */
 
@@ -459,8 +579,7 @@ footer {
 
 /* Customer Support Button */
 footer button {
-    background-color: #e60012;
-    /* Red button similar to Mario's theme */
+    background-color: #e60012; /* Red button similar to Mario's theme */
     text-transform: capitalize;
     color: white;
     padding: 1em 2em;
@@ -479,169 +598,81 @@ footer button:hover {
 
 /* Social Media Icons */
 footer h5 {
-
     font-size: 1.5em;
     font-weight: bold;
     text-transform: capitalize;
 }
 
-footer ol {
-
+footer ol { /* Layout content */
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 2em;
-    /* Spacing between icons */
-    margin-top: 0.5;
+    margin-top: 0.5em;
 }
 
-footer img[alt="linktofacebook"] {
-    height: 4em;
-    border: 0.1em solid white;
-    border-radius: 0.3em;
-}
-
-/* Target the Twitter icon */
-footer img[alt="linktotwitter"] {
-    height: 4em;
-    border: 0.1em solid white;
-    border-radius: 0.3em;
-}
-
-/* Target the YouTube icon */
-footer img[alt="linktoyoutube"] {
-    height: 4em;
-    border: 0.1em solid white;
-    border-radius: 0.3em;
-}
-
-/* Target the YouTube icon */
+footer img[alt="linktofacebook"],
+footer img[alt="linktotwitter"],
+footer img[alt="linktoyoutube"],
 footer img[alt="linktoinstagram"] {
     height: 4em;
     border: 0.1em solid white;
     border-radius: 0.3em;
 }
 
+/* Slight zoom effect on hover */
 footer ol li img:hover {
     transform: scale(1.1);
-    /* Slight zoom effect on hover */
-
 }
 
-/* Privacy and Terms Links */
+
 footer ol a {
     text-decoration: none;
     color: white;
-
 }
 
 footer ol a:hover h6 {
     text-decoration: underline;
-    /* Underline on hover */
 }
 
-/* Bottom Text */
 footer h6 {
     text-align: center;
     margin-top: 30px;
     font-size: 0.9em;
     font-weight: normal;
-    line-height: 0.5;
+    line-height: 1.5;
 }
 
-/* Add responsiveness smaller screens */
+/* RESPONSIVENESS FOR SMALLER SCREENS */
 @media (max-width: 600px) {
-    .news-section {
-        padding: 10px;
-        /* Reduce padding on smaller screens */
-        gap: 10px;
-        /* Reduce gap on smaller screens */
+    footer {
+        padding: 20px 10px; /* Reduce padding for smaller screens */
+        font-size: 12px; /* Adjust font size */
     }
 
-    .news-section article {
-        padding: 5px;
-        /* Less padding for smaller articles */
-    }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav-toggle {
-        display: inline-block;
-        /* Show toggle button on smaller screens */
+    footer h5 {
+        font-size: 1.2em; /* Scale down heading size */
     }
 
-    nav ul {
-        display: none;
-        /* Initially hide the menu */
-        grid-template-columns: 1fr;
-        /* Stack items */
-        gap: 1rem;
-        text-align: center;
-        padding: 1rem 0;
-        background-color: #e60012;
+    footer ol {
+        flex-direction: column; /* Stack icons vertically */
+        gap: 1em; /* Reduce gap between items */
     }
 
-    nav ul.active {
-        display: grid;
-        /* Show menu when active */
+    footer img[alt="linktofacebook"],
+    footer img[alt="linktotwitter"],
+    footer img[alt="linktoyoutube"],
+    footer img[alt="linktoinstagram"] {
+        height: 3em; /* Adjust icon size for smaller screens */
     }
 
-
-    h3 {
-        text-transform: capitalize;
-        text-align: center;
-
-        font-size: 4em;
-        font-weight: 850;
-    }
-}
-
-/* Hover effect on the list items */
-.image-list li:hover {
-    transform: scale(1.1);
-    /* Enlarge the item when hovered */
-}
-
-/* Make it responsive */
-@media (max-width: 768px) {
-    .image-list {
-        gap: 1rem;
-        /* Reduce gap on smaller screens */
+    footer button {
+        font-size: 14px; /* Scale button text */
+        padding: 0.8em 1.5em; /* Adjust button padding */
     }
 
-    .image-list img {
-        width: 60px;
-        /* Reduce image size on small screens */
-    }
-}
-
-/* Responsive styles for phones */
-@media (max-width: 768px) {
-    .playwithfriends {
-        grid-template-columns: 1fr;
-        /* Stack content in a single column */
-        text-align: center;
-        /* Center-aligns text for smaller screens */
-    }
-
-    .playwithfriends img {
-        max-width: 100%;
-        /* Ensure image adjusts to fit smaller screens */
-        margin: 0 auto;
-        /* Center image horizontally */
-    }
-
-    .playwithfriends .text-content {
-        padding: 10px;
-        /* Adds spacing around text for readability */
-    }
-
-    .playwithfriends .text-content h2,
-    .playwithfriends .text-content p,
-    .playwithfriends .text-content a {
-        text-align: center;
-        /* Center-align all text and link */
+    footer h6 {
+        font-size: 0.8em; /* Reduce font size for links */
     }
 }
