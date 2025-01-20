@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Add hover effects using JavaScript if needed
 document.querySelectorAll('.image-list li').forEach(item => {
     item.addEventListener('mouseover', () => {
-        item.style.transform = "scale(1.1)"; // Slightly enlarge the item on hover
+        item.style.transform = "scale(1.1)"; // enlarge the item on hover
     });
     item.addEventListener('mouseout', () => {
         item.style.transform = "scale(1)"; // Reset to original size
